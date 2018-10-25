@@ -1,0 +1,340 @@
+* {
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+}
+html {
+    scroll-behavior: smooth;
+}
+body,html {
+    height: 100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+}
+/* start main nav */
+
+#main-nav {
+    height: 45px;
+    width: 100%;
+    background: rgba(73, 84, 90, .8);
+    
+}
+.logo {
+    font-size: 20px;
+    float: left;
+    padding: 10px 5px;
+    color: white;
+    cursor: pointer;
+}
+.logo:hover {
+    color: #222;
+}
+ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+ul a {
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+ul a:hover {
+   color: #222;
+}
+nav li {
+    margin: 0;
+
+    flex: 1 1 0;
+}
+/* end main nav */
+/* parallax */
+.img1, .img2, .img3 {
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.img1 {
+    background-image: url("../assets/pc1.jpg");
+    min-height: 100%;
+}
+.img2 {
+    background-image: url("../assets/pc2.jpg");
+    min-height: 100vh;
+}
+.img3 {
+    background-image: url("../assets/wood3.jpg");
+    min-height: 500px;
+}
+.section {
+    text-align: center;
+}
+.light{
+    background-color:#f4f4f4;
+    color:#666;
+}
+  
+.dark{
+    background-color:#282e34;
+    color:#ddd;
+}
+.text{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+}
+.text .border {
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+}
+.text .trans {
+    background-color: transparent;
+}
+/* parallax end */
+#topX{
+    color: white;
+    z-index: 7;
+    background: #B1CBE5;
+    border-radius: 7px;
+    padding: 5px 12px;
+    position: fixed;
+    font-size: 25px;
+    right: 0%;
+    top: 84%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#topX:hover{
+    background: #282e34;
+    color: white;
+}
+/* start profile */
+.profile {
+    font-family: "Arial Black", Gadget, sans-serif;
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+#profile {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.profile h2 {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+}
+.profile hr {
+    width: 400px;
+    height: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+}
+.profile p {
+    width: 80%;
+    font-size: 2em;
+    align-self: center;
+}
+/* end profile */
+
+/* start portfolio */
+.exp {
+    text-shadow: 1px 1px 2px #000;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    margin-top: 20px;
+    color: #f4f4f4;
+    font-weight: 400;
+
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.exp h2 {
+    justify-self: center;
+    font-size: 3em;
+    margin: 0 0 10px 0;
+    width: 100%;
+}
+.progress {
+    height: 80vh;
+    margin: 0;
+}
+.progress .technique {
+    margin-left: 50px;
+}
+
+.progress .technique h3{
+    margin: 10px 0;
+    font-size: 1.5em;
+}
+.progress .technique div{
+    border-radius: 7px;
+    background-color: #f2f2f2;
+    height: 25px;
+}
+.progress .technique div span{
+    border-radius: 7px;
+    line-height: 25px;
+    text-align: end;
+    color: #fff;
+    background-color: #2ecc71;
+    height: 25px;
+    display: block;
+}
+.span1 , .span2, .span3, .span4, .span5, .span6, .span7 {
+    transition: .8s;
+    animation: progress infinite 4s ease-out;
+    animation-fill-mode: forwards;    
+}
+.progress .span1 {
+    max-width : 90%;
+}
+.progress .span2 {
+    max-width : 80%;
+}
+.progress .span3 {
+    max-width : 70%;
+}
+.progress .span4 {
+    max-width : 70%;
+}
+.progress .span5 {
+    max-width : 70%;
+}
+.progress .span6 {
+    max-width : 60%;
+}
+.progress .span7 {
+    max-width : 80%;
+}
+@keyframes progress {
+    0% {width:0;}
+    100% {width:100%}
+}
+
+.manDrink {
+    width: 50%;
+    height: 500px;
+}
+/* End portfolio */
+
+/* Start Aboutme */
+#aboutme {
+    padding-top: 20px;
+    background-image: url('../assets/ai-close-up-code-160107.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #f2f2f2;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 400;
+    
+}
+#aboutme h2{
+    padding: 10px;
+    font-size: 2em;
+    margin: 0;
+    float: left;
+}
+#aboutme p {
+    clear: both;
+    font-size: 1.5em;
+    text-align: left;
+    padding: 10px;
+    width: 30%;
+}
+#aboutme .samples {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60vh;
+    clear: both;
+    width: 100%;
+}
+.samples a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+    text-decoration: none;
+    height: 40vh;
+    /* width: 24%; */
+    margin: 1%;
+    font-size: 1.5em;
+    width: 20%;
+    border-radius: 50%;
+    opacity: .6;
+}
+.samples a:hover {
+    opacity: 1;
+}
+.samples a:nth-child(1) {
+    background-image: url('../assets/naruto.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.samples a:nth-child(2) {
+    background-image: url('../assets/Cinnabon.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.samples a:nth-child(3) {
+    background-image: url('../assets/bmw.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.samples a:nth-child(4) {
+    background-image: url('../assets/mariojpg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+/* End Anoutme */
+
+/* Start Contact */
+#contact {
+    height: 10vh;
+    background-color: #282e34;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#contact span {
+    color: white;
+    font-size: 1.5em;
+}
+#contact img {
+    height: 25px;
+    width: 25px;
+}
+/* end contact */
