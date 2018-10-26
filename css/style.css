@@ -69,7 +69,7 @@ nav li {
 
 .img1 {
     background-image: url("../assets/pc1.jpg");
-    min-height: 100%;
+    min-height: 100vh;
 }
 .img2 {
     background-image: url("../assets/pc2.jpg");
@@ -97,7 +97,7 @@ nav li {
     width:100%;
     text-align:center;
     color:#000;
-    font-size:27px;
+    font-size:30px;
     letter-spacing:8px;
     text-transform:uppercase;
 }
@@ -199,7 +199,7 @@ nav li {
 }
 .progress .technique div{
     border-radius: 7px;
-    background-color: #f2f2f2;
+    background-color: #f4f4f4;
     height: 25px;
 }
 .progress .technique div span{
@@ -338,3 +338,45 @@ nav li {
     width: 25px;
 }
 /* end contact */
+@media screen and (max-width: 700px) {
+    #main-nav {
+        height: 130px;
+    }
+    #main-nav ul  {
+        padding: 0;
+        flex-direction: column;
+    }
+    #main-nav ul a {
+        width: 100%;
+        font-size: larger;
+        padding-top: 8px;
+    }
+    .logo {
+        display: none;
+    }
+    .text .border {
+        font-size: smaller;
+        display: inline-block;
+        /* height: 250px; */
+    }
+    .manDrink {
+        display: none;
+    }
+    #aboutme p{
+        width: 100%;
+    }
+    #aboutme {
+        height: 80vh;
+    }
+    #aboutme .samples {
+        align-items: initial;
+    }
+    .samples a {
+        border-radius: 7px;
+        height: 25vh;
+        font-size: 1em;
+    }
+    .progress .technique {
+        margin-left: 100px;
+    }
+}
