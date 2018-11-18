@@ -13,6 +13,7 @@ body,html {
     font-weight:400;
     line-height:1.8em;
     color:#666;
+    /* overflow: hidden; */
 }
 /* start main nav */
 
@@ -118,9 +119,8 @@ nav li {
     padding: 5px 12px;
     position: fixed;
     font-size: 25px;
-    right: 0%;
+    right: 7%;
     top: 84%;
-    margin-right: 20px;
     cursor: pointer;
 }
 #topX:hover{
@@ -213,7 +213,7 @@ nav li {
 }
 .span1 , .span2, .span3, .span4, .span5, .span6, .span7 {
     transition: .8s;
-    animation: progress infinite 4s ease-out;
+    animation: progress infinite 4.5s linear;
     animation-fill-mode: forwards;    
 }
 .progress .span1 {
@@ -235,7 +235,7 @@ nav li {
     max-width : 60%;
 }
 .progress .span7 {
-    max-width : 80%;
+    max-width : 50%;
 }
 @keyframes progress {
     0% {width:0;}
@@ -363,7 +363,7 @@ nav li {
         display: none;
     }
     #aboutme p{
-        width: 100%;
+        width: 90%;
     }
     #aboutme {
         height: 80vh;

@@ -1,3 +1,4 @@
+alert("This is a beta version, you may see some glitches in mobile versions");
 
 window.onscroll = function() {
   TopX();
